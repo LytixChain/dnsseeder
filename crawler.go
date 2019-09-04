@@ -45,11 +45,14 @@ func crawlIP(s *dnsseeder, r *result) ([]*wire.NetAddress, *crawlError) {
 	verack := make(chan struct{})
 	onAddr := make(chan *wire.MsgAddr)
 	peerCfg := &peer.Config{
-		UserAgentName:    "quantisnet-dnsseeder-go", // User agent name to advertise.
+		UserAgentName:    "lytixchain-dnsseeder-go", // User agent name to advertise.
 		UserAgentVersion: "2.3.1.1",                 // User agent version to advertise.
-		ChainParams:      &chaincfg.MainNetParams,
+		ChainParams:      &chaincfg.MainNetParams{
+			Name: s.name,
+			Net:s.id,
+		},
 		Services:         0,
-		ProtocolVersion:  70214,
+		ProtocolVersion:  s.Pver,//
 		Listeners: peer.MessageListeners{
 			OnAddr: func(p *peer.Peer, msg *wire.MsgAddr) {
 				onAddr <- msg
@@ -85,7 +88,7 @@ func crawlIP(s *dnsseeder, r *result) ([]*wire.NetAddress, *crawlError) {
 	// Wait for the verack message or timeout in case of failure.
 	select {
 	case <-verack:
-	case <-time.After(time.Second * 30):
+	case <-time.After(time.Second * 5):
 		return nil, &crawlError{"Verack timeout", errors.New("")}
 	}
 
