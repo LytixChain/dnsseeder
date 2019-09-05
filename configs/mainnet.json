@@ -1,7 +1,7 @@
 {
   "Name": "Mainnet",
   "Desc": "Lytix Core Mainnet",
-  "Id": "0xe8f3e1e3",
+  "Id": "0x5f2ac3b4",
   "Port": 27071,
   "Pver": 71032,
   "DNSName": "dns.lytixchain.org",

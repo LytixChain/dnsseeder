@@ -1,7 +1,7 @@
 {
   "Name": "Testnet",
   "Desc": "Lytix Core Testnet",
-  "Id": "0xfabfb5da",
+  "Id": "0xf0a00c0e",
   "Port": 27072,
   "Pver": 71032,
   "DNSName": "testnet.lytixchain.org",
