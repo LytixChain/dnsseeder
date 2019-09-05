@@ -1,14 +1,14 @@
 {
-  "Name": "Testnet3",
-  "Desc": "Bitcoin Cash Testnet3",
+  "Name": "Testnet",
+  "Desc": "Lytix Core Testnet",
   "Id": "0xfabfb5da",
-  "Port": 18333,
-  "Pver": 70001,
-  "DNSName": "seeder.example.com",
+  "Port": 27072,
+  "Pver": 71032,
+  "DNSName": "testnet.lytixchain.org",
   "TTL": 300,
-  "Seeder1": "testnet-seed.bitcoinabc.org",
-  "Seeder2": "testnet-seed-abc.bitcoinforks.org",
-  "Seeder3": "testnet-seed.bitprim.org",
+  "Seeder1": "testnet.lytixchain.org",
+  "Seeder2": "dns1.lytixchain.org",
+  "Seeder3": "dns2.lytixchain.org",
   "ServiceFilter": [
     "NodeNetwork"
   ]

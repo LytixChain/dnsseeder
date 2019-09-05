@@ -1,7 +1,7 @@
 dnsseeder
 =========
-[![Build Status](https://travis-ci.com/akshaynexus/dnsseeder.png?branch=master)](https://travis-ci.com/akshaynexus/dnsseeder)
-[![Go Report Card](https://goreportcard.com/badge/github.com/akshaynexus/dnsseeder)](https://goreportcard.com/report/github.com/akshaynexus/dnsseeder)
+[![Build Status](https://travis-ci.com/LytixChain/dnsseeder.png?branch=master)](https://travis-ci.com/LytixChain/dnsseeder)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kshaynexus/dnsseeder)](https://goreportcard.com/report/github.com/akshaynexus/dnsseeder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](http://godoc.org/github.com/gcash/dnsseeder)
 
@@ -23,7 +23,7 @@ Originally forked from https://github.com/gombadi/dnsseederd
 
 Simply use go get to download the code:
 
-    $ go get github.com/akshaynexus/dnsseeder
+    $ go get github.com/LytixChain/dnsseeder
 
 ## Usage
 

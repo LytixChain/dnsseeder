@@ -45,8 +45,8 @@ func crawlIP(s *dnsseeder, r *result) ([]*wire.NetAddress, *crawlError) {
 	verack := make(chan struct{})
 	onAddr := make(chan *wire.MsgAddr)
 	peerCfg := &peer.Config{
-		UserAgentName:    "lytixchain-dnsseeder-go", // User agent name to advertise.
-		UserAgentVersion: "2.3.1.1",                 // User agent version to advertise.
+		UserAgentName:    "Lytix Core", // User agent name to advertise.
+		UserAgentVersion: "2.0.3",                 // User agent version to advertise.
 		ChainParams: &chaincfg.Params{
 			Name: s.name,
 			Net:  s.id,
