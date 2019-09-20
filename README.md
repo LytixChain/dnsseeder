@@ -71,8 +71,8 @@ Typically, you'll need root privileges to listen to port 53 (name service).
 One solution is using an iptables rule (Linux only) to redirect it to
 a non-privileged port. Must be done as root:
 
-$ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-port 8053
-$ iptables-save > rules.v4
+```iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-port 8053
+iptables-save > rules.v4```
 
 If properly configured, this will allow you to run dnsseeder in userspace, using the -p 8053 option.
 
